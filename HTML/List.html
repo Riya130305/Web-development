@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List tag</title>
+        <mete charset="UTF-8">
+        <meta name= "viewport" context="width=device-width,intial-scale=1.0">    
+        <style>
+           html{
+                scroll-behavior:smooth;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+                /* text-align:center; */
+                /* background-image: url("C:\Users\riyak\Downloads"); */
+                font-weight:bold;
+
+           }
+           /* h1{
+            font-weight:bold;
+           } */
+
+           li{
+            text-transform: capitalize;
+           }
+        </style>
+    </head>
+    <body>
+        <h1>Html list tag</h1>
+
+        <!-- unordered list -->
+        <ul style="list-style-type:circle">
+            <li>green</li>
+            <li>Blue</li>
+            <li>Weigth</li>
+        </ul>
+
+        <!-- ORDERED LIST -->
+        <ol style ="list-style-type:upper-roman">
+            <li>first class</li>
+            <li>second class</li>
+            <li>third class</li>
+        </ol>  
+        
+        <!-- USE OF THE START (FROM WHERE TO START) -->
+        <ol type="2" start="6">
+            <li>first class</li>
+            <li>second class</li>
+            <li>third class</li>
+        </ol>  
+
+
+        <!-- NESTED LIST -->
+
+        <ul>                           
+            <li>Fruit</li>
+            <ol>
+                <li>Banana</li>
+                <li>Apple</li>
+                <ul type="square">
+                    <li>Green</li>
+                    <li>Red</li>
+                </ul> 
+                <li>Pear</li>
+            </ol>       
+            <li>Vegetable</li>
+            <li>Meat</li>
+
+        </ul>  
+        <hr />
+        <!-- TO MAKE THE NAPBAR (INLINE block ) -->
+        <ul style="list-style: none; display: flex; gap:15px">
+
+            <li><a href="https://www.youtube.com/watch?v=2QmKfIRN0lw" target=_blank">Home</li></a>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>    
+
+    </body> 
+</html>   
