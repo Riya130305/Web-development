@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image tag</title>
+        <style>
+            html{
+                scroll-behavior: smooth;
+                font-family: "jost",sans-serif;
+                font-weight:bold;
+                text-align:center;
+                background-color:blanchedalmond;
+            }
+
+            html{
+                /* max-width:250px; */
+                box-shadow:rgba(100, 100,111, 0.2) 0px,7px,29px,0px;
+                border-radius: 8px;
+            }
+        </style>    
+    </head>
+    <body>
+
+     <!--1. FIRST way to add the image -->   
+        <a href = "https://www.youtube.com/watch?v=5ccq_nLHneE&t=8835s"
+        target="_blank">  <!--TO OPEN THE LIKE WITH THE HELP OF IMAGE PROVIDED-->
+        
+        <img src="C:\Users\riyak\OneDrive\Pictures\Acer\2024_Acer_Consumer_Option_01_3840x2400.jpg"
+        <!-- alt="my html course thubnail" WHEN IMAGE TO OPEN THIS TEXT SHOULD APPERE -->
+        width="50%"
+        heigth="250"
+        title = "html course photo"
+        loading="lazy" /> <!--TO LOAD THE IMAGE WHEN WE MVE TO THAT Image setion-->
+        </a>
+
+    <!--2. second way to add the image -->
+
+    <H1>Second way to add image</H1>   
+    <a href ="https://www.google.com/search?sca_esv=934c9bedd21559cf&rlz=1C1CHBF_enIN1129IN1129&q=simple+photo+gallery&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J603JUkR9Y5suk8yuy50qOa0K08TrPholP8ECM8ELoq5IUBS6CRaLhdJrYheb4i23Gg2RMFPTdB5NMZThSbhb_5dQUAFBko-TndSSa2R3ghL4Yrkf_d_1PEifnHWmbfc-15i61Wj3vOrNfn3Uz_lR5JJetuO5Zbrt_SwcCSNG8Kn_rJV3w&sa=X&sqi=2&ved=2ahUKEwi-qrT477eKAxX4XWwGHVlBF4EQtKgLegQIExAB&biw=1280&bih=665&dpr=1.5"
+    target = "_blank">
+
+    <img src="C:\Users\riyak\OneDrive\Pictures\Acer\2024_Acer_Consumer_Option_01_3840x2400.jpg"
+    alt="Another way to open the image"
+    usemap="#map"
+    width="250"
+    heigth="150"
+    />
+    
+    <map name="map"> <!--LINK THE IMAGE TO THE UPPER IMAGE-->
+     <area
+    shape="circle"
+    coords="20,15,5" />
+    <!--TO PLAY WITH THE COORDINTES TO MAKE PARST OF IMAGE CLICKABLE-->
+    
+    <!-- <map name="map"> 
+    <area 
+    shape="poly"
+    coords="300,100,350,200,250,200"/> -->
+    </map>  
+     </a> 
+
+     <!--ADVANCED IMAGE ADDING  -->
+
+     <img 
+  src="C:\Users\riyak\OneDrive\Pictures\Acer\2024_Acer_Consumer_Option_01_3840x2400.jpg" 
+  alt="Responsive Image" 
+  srcset="
+  C:\Users\riyak\OneDrive\Pictures\Acer\2024_Acer_Consumer_Option_01_3840x2400.jpg-400.jpg 400w,
+  C:\Users\riyak\OneDrive\Pictures\Acer\2024_Acer_Consumer_Option_01_3840x2400.jpg-600.JPG 600w,
+  C:\Users\riyak\OneDrive\Pictures\Acer\2024_Acer_Consumer_Option_01_3840x2400.jpg-800.jpg 800w,
+  C:\Users\riyak\OneDrive\Pictures\Acer\2024_Acer_Consumer_Option_01_3840x2400.jpg-1000.jpg 1000w
+  "
+  sizes="(max-width: 600px) 400px, 
+         (max-width: 800px) 600px, 
+         (max-width: 1100px) 1000px, 
+         1200px" 
+/>
+    </body>
+</html>        
+
+<!--############ VOID/EMPTY ELEMENT ##############-->
+
+<!-- A tahg have only opening tag not having the closing tag
+ ex: <br>, <hr>, <img>,<area> -->
