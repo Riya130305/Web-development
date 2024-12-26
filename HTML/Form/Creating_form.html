@@ -1,0 +1,175 @@
+<!DOCtype html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            html{
+                scroll-behavior:smooth;
+                /* text-align:center; */
+                background-color:aliceblue;
+
+            }
+            div
+            {
+                margin-bottom: 15px;
+            }
+        </style>
+        </head>
+        <body>
+            <h2>Html form</h2>
+            <form>
+                <!-- TEXT TYPE -->
+
+                <!-- Input used to take the input from the user.-->
+                
+                <!-- label: 1)Used to give the name(text) inline .
+                  2)Help to read the screen reader.-->
+
+                <!--a)Id should we unique.
+                b)Id in input and for in label used to link the both tag together(Bindup the text).
+                c)They id and label should have the same  -->
+
+                <label for="First name">First name</label>
+                <input id="First name" type="text" name ="Reeta">
+                <br />
+                <br />
+
+                <label for="Second name">Second name</label>
+                <input id="Second name" type="text">
+                <br />
+                <br />
+                <!-- AGE -->
+                <label for="Age">Age</label>
+                <input id="Age" type="number" max="10" min="1">
+                <br />
+                <br />
+                <!-- DATE -->
+
+
+                <label for="DOB">DOB</label>
+                <input id="DOB" type="date">
+                <br /><br />
+                
+                <!--***Reduired(ATTRIBUTE)***: Data that is required, 
+                if you not fill then it will give message to fill it  -->
+            
+                <!-- ***Autocomplete="off"(ATTRIBUTE)***:By this we can not see the previous data. -->
+               
+                <!-- ***Readonly(ATTRIBUTE)***: Donot need to fill the email already filled. -->
+                
+                <!-- EMAIL TYPE -->
+                <label for="Email">Email</label>
+                <input id="Email" type="email">
+                <br /><br />
+                <!-- PASSWORD TYPE -->
+                <label for="password">password</label>
+                <input id ="password" type="password"
+                placeholder="Enter the password">
+                <br /><br />
+
+
+                <!-- Name:a)TO select the one value at a time(like in radio typei).
+                 b) Used to provide the name, that show in the link.  
+                c) After submitting what name is going.-->
+
+                <!-- Value:a) Provide the value ,what value apper after submit the form. -->
+
+                <!-- NOTE Both value and name appere in the link after submit the link-->
+
+                <!-- RADIO TYPE -->
+                <p>enter your tshirt size</p>
+                <input id="ts" type="radio" name ="tsh" value="small">
+                <label for="ts">small</label>
+                <br /><br />
+
+                <input id="ts" type="radio" name ="tsh">
+                <label for="ts">medium</label>
+
+                <br /><br />
+
+                <input id="ts" type="radio" name ="tsh">
+                <label for="ts">large</label>
+                <br /><br />
+
+                <!-- COLOR TYPE -->
+
+                <input id ="color" type="color">
+                <label for="color">Choose any color</label>
+                <br /><br />
+
+                <!-- TO PROVIDE THE DROP-DOWN LIST -->
+                <div>
+                <label for="car">Car</label>
+                <select name ="car" id = "car">
+                    <option value="AUDI">AUDI</option>
+                    <option value="SAAB">SAAB</option>
+                    <option value="FIAT">FIAT</option>
+                    <option value="VOLVO">VOLVO</option>
+                </select> 
+                </div>
+
+
+                <!-- a)IN DATALIST WE CAN ALSO INCLUDE THE DATA OF OUR CHOICE
+                  if it is mot in the list the we have given.
+                
+                  b)Also need to givr the list attribute in the input .
+                  and id attribute in the datalist to link .
+                  if list and id is not present with the same value then datalist will not work.
+                  
+                  c) need to use the input ttag in datalist while in select we donot required it.  -->
+                <div>
+                    <label for="car">Car</label>
+                    <input id="car" type ="text" name ="car" list="Newcars">
+                    <datalist id = "Newcars">
+                        <option value="AUDI">AUDI</option>
+                        <option value="SAAB">SAAB</option>
+                        <option value="FIAT">FIAT</option>
+                        <option value="VOLVO">VOLVO</option>
+                    </datalist > 
+                </div>
+
+
+                <!-- TO add the text area for input -->
+                <label for="aboutyourself">Tell us about yourself</label>
+                <textarea name="aboutyourself" id ="aboutyourself"
+                col="30"
+                row="23"
+                placeholder="Enter the text"></textarea>
+
+                <!-- Type to upload the file -->
+
+                <div>
+                    <label for="file">Select file</label>
+                    <input id="file" name="fileUpload" type="file">
+                </div>    
+                <!-- RESET TYPE -->
+
+                <input id ="reset" type="reset">
+                <label for="reset"></label>
+                
+                <!-- SUBMIT TYPE (USED TO ANALIZE THE VALUE 
+                 WEATHER VALUE ARE CORRECTLY FILLED OR NOT) -->
+
+
+                <label for="sub"></label>
+                <input id="sub" name="submit" type="submit">
+                <!-- or -->
+                <button type ="submit">Submit </button >
+
+            </form>    
+        </body>
+    </html>    
+
+    <!--############ IMPORTANT QUESTION ##########-->
+
+    <!-- 1. What is the difference between id and class?? -->
+
+    <!-- ANS) id should we unique always(denoted by #)
+     while class can have the same name(denoted by .) -->
+
+    <!-- 2.What is the difference b/w DIV and SPAN?? -->
+
+    <!-- ANS) DIV is the block element form blank line 
+      before and after it.
+      
+    Span is inline attribute text in the same line-->
