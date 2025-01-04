@@ -1,0 +1,17 @@
+section{
+    display:grid;
+    place-items: center;
+}
+img{
+    width:50%;
+    border-radius:6px;
+    box-shadow:2px 4px 5px 3px rgb(123, 123, 235);
+    /* filter:grayscale(); */
+    /* /* filter:blur(5px); */
+    /* filter:brightness(20%); */
+    /* filter:contrast(180%) */
+    /* filter:saturate(2); */
+    /* filter:invert();;
+    filter:opacity(0.3);*/
+}
+   
